@@ -30,7 +30,7 @@ def get_text_messages(message):
 
     if message.text == '👋 Поздороваться':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True) #создание новых кнопок
-        btn1 = types.KeyboardButton('Начать')
+        btn1 = types.KeyboardButton('Посмотреть новости')
         markup.add(btn1,)
         bot.send_message(message.from_user.id, 'Начать парсинг?', reply_markup=markup) #ответ бота
 
